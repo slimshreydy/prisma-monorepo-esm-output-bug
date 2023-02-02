@@ -1,0 +1,5 @@
+{
+  "name": "@prisma-monorepo-esm-output-bug/dev",
+  "private": true,
+  "workspaces": ["package", "web"]
+}

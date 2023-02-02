@@ -1,0 +1,19 @@
+{
+  "name": "@prisma-monorepo-esm-output-bug/web",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev"
+  },
+  "dependencies": {
+    "@prisma-monorepo-output-bug/prisma": "*",
+    "next": "^13.1.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "typescript": "^4.9.4"
+  }
+}

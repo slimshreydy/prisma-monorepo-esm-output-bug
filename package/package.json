@@ -1,0 +1,25 @@
+{
+  "name": "@prisma-monorepo-esm-output-bug/package",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "type": "module",
+  "scripts": {
+    "build:prisma": "prisma generate",
+    "push:prisma": "prisma db push",
+    "build:typescript": "tsc",
+    "build": "npm run build:prisma && npm run build:typescript && cp schema.prisma dist/schema.prisma",
+    "prepublish": "npm run build",
+    "postinstall": "npx prisma@4.9.0 generate --schema ./dist/schema.prisma"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.9.0"
+  },
+  "devDependencies": {
+    "prisma": "^4.9.0",
+    "typescript": "^4.9.4"
+  }
+}
