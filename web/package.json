@@ -1,11 +1,12 @@
 {
   "name": "@prisma-monorepo-esm-output-bug/web",
+  "private": true,
   "type": "module",
   "scripts": {
     "dev": "next dev"
   },
   "dependencies": {
-    "@prisma-monorepo-output-bug/prisma": "*",
+    "@prisma-monorepo-esm-output-bug/package": "*",
     "next": "^13.1.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
